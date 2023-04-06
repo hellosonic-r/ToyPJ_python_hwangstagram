@@ -87,9 +87,9 @@ WSGI_APPLICATION = 'djangoProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': '3.136.26.7',
+        'HOST': 'db-toypj-hwangstagram.cluster-c4nzatdzo39q.us-east-2.rds.amazonaws.com',
         'NAME': 'hwangstagram',
-        'USER': 'root',
+        'USER': 'admin',
         'PASSWORD': 'password',
         'PORT': '3306',
         'OPTIONS': {'charset': 'utf8mb4'},
