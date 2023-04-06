@@ -55,7 +55,7 @@ class Login(APIView):
         if check_password(password, user.password) is False:
             return Response(status=500, data=dict(message="이메일 혹은 비밀번호를 잘못 입력했습니다."))
 
-        request.session['email'] = user.email
+        request.session['email'] = email
 
         return Response(status=200, data=dict(message="로그인에 성공했습니다."))
 

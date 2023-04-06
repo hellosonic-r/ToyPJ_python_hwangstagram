@@ -13,7 +13,7 @@ from djangoProject.settings import MEDIA_ROOT
 class Main(APIView):
     def get(self, request):
 
-        email = request.session.get('email',None)
+        email = request.session.get('email', None)
 
         if email is None:
             return render(request, "user/login.html")
