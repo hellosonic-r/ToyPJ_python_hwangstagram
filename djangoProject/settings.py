@@ -89,7 +89,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'HOST': 'db-toypj-hwangstagram.cluster-c4nzatdzo39q.us-east-2.rds.amazonaws.com',
         'NAME': 'hwangstagram',
-        'USER': 'admin',
+        'USER': 'admin' ,
         'PASSWORD': 'password',
         'PORT': '3306',
         'OPTIONS': {'charset': 'utf8mb4'},
