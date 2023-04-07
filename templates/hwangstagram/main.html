@@ -267,11 +267,15 @@
             <div class="feed_name" style="justify-content: space-between">
                 <div style="display: flex; align-items: center">
                     <div class="side_big_profile_box">
-                        <img class="side_profile_img"
+                        <a href="/content/profile">
+                            <img class="side_profile_img" style="cursor: pointer"
                              src="{% get_media_prefix %}{{ user.profile_image }}">
+                        </a>
                     </div>
                     <div class="name_content">
-                        <span class="feed_name_txt"> {{ user.nickname }} </span>
+                        <a href="/content/profile">
+                            <span class="feed_name_txt" style="cursor: pointer"> {{ user.nickname }} </span>
+                        </a>
                         <span class="name_content_txt"> {{ user.name }}</span>
                     </div>
                 </div>
@@ -279,7 +283,7 @@
 
                 {#오른쪽 화면#}
                 <a class="link_txt">
-                    전환
+
                 </a>
             </div>
 
@@ -323,77 +327,77 @@
             </div>
 
             {#회원님을 위한 추천#}
-            <div class="recommend_box">
-                <span style="color: gray"> 회원님을 위한 추천</span>
-                <span style="font-size: 12px"> 모두 보기 </span>
-            </div>
-            <div>
-                <div class="feed_name" style="justify-content: space-between">
-                    <div class="profile_box">
-                        <img class="profile_img"
-                             src="https://cdn.aitimes.kr/news/photo/202210/26353_39636_3824.jpg">
-                    </div>
-                    <div class="name_content">
-                        <span class="feed_name_txt"> Jaeyong0623 </span>
-                        <span class="name_content_txt"> SSAFY 외 12명이 팔로우</span>
-                    </div>
-                    <a class="link_txt">
-                        팔로우
-                    </a>
-                </div>
-                <div class="feed_name" style="justify-content: space-between">
-                    <div class="profile_box">
-                        <img class="profile_img"
-                             src="https://images.samsung.com/kdp/aboutsamsung/brand_identity/logo/300_186_3.png?$568_320_PNG$">
-                    </div>
-                    <div class="name_content">
-                        <span class="feed_name_txt"> SAMSUNG </span>
-                        <span class="name_content_txt"> Jaeyong0623 외 10명이 팔로우</span>
-                    </div>
-                    <a class="link_txt">
-                        팔로우
-                    </a>
-                </div>
-                <div class="feed_name" style="justify-content: space-between">
-                    <div class="profile_box">
-                        <img class="profile_img"
-                             src="http://www.adelieon.com/wordpress/wp-content/uploads/2020/03/2018_samsung_multi-1000x1000.png">
-                    </div>
-                    <div class="name_content">
-                        <span class="feed_name_txt"> Multi_Campus </span>
-                        <span class="name_content_txt"> SAMSUNG 외 4명이 팔로우</span>
-                    </div>
-                    <a class="link_txt">
-                        팔로우
-                    </a>
-                </div>
-                <div class="feed_name" style="justify-content: space-between">
-                    <div class="profile_box">
-                        <img class="profile_img"
-                             src="https://xen-api.linkareer.com/attachments/24036">
-                    </div>
-                    <div class="name_content">
-                        <span class="feed_name_txt"> SSAFY </span>
-                        <span class="name_content_txt"> Multi_Campus 외 38명이 팔로우 </span>
-                    </div>
-                    <a class="link_txt">
-                        팔로우
-                    </a>
-                </div>
-                <div class="feed_name" style="justify-content: space-between">
-                    <div class="profile_box">
-                        <img class="profile_img"
-                             src="https://img1.daumcdn.net/thumb/C176x176/?fname=https://blog.kakaocdn.net/dn/vtlxw/btrw7SoWb7K/nRUgvKnYxdo3DNeIlB2PZK/img.png">
-                    </div>
-                    <div class="name_content">
-                        <span class="feed_name_txt"> SWEA </span>
-                        <span class="name_content_txt"> SSAFY 외 7명이 팔로우 </span>
-                    </div>
-                    <a class="link_txt">
-                        팔로우
-                    </a>
-                </div>
-            </div>
+{#            <div class="recommend_box">#}
+{#                <span style="color: gray"> 회원님을 위한 추천</span>#}
+{#                <span style="font-size: 12px"> 모두 보기 </span>#}
+{#            </div>#}
+{#            <div>#}
+{#                <div class="feed_name" style="justify-content: space-between">#}
+{#                    <div class="profile_box">#}
+{#                        <img class="profile_img"#}
+{#                             src="https://cdn.aitimes.kr/news/photo/202210/26353_39636_3824.jpg">#}
+{#                    </div>#}
+{#                    <div class="name_content">#}
+{#                        <span class="feed_name_txt"> Jaeyong0623 </span>#}
+{#                        <span class="name_content_txt"> SSAFY 외 12명이 팔로우</span>#}
+{#                    </div>#}
+{#                    <a class="link_txt">#}
+{#                        팔로우#}
+{#                    </a>#}
+{#                </div>#}
+{#                <div class="feed_name" style="justify-content: space-between">#}
+{#                    <div class="profile_box">#}
+{#                        <img class="profile_img"#}
+{#                             src="https://images.samsung.com/kdp/aboutsamsung/brand_identity/logo/300_186_3.png?$568_320_PNG$">#}
+{#                    </div>#}
+{#                    <div class="name_content">#}
+{#                        <span class="feed_name_txt"> SAMSUNG </span>#}
+{#                        <span class="name_content_txt"> Jaeyong0623 외 10명이 팔로우</span>#}
+{#                    </div>#}
+{#                    <a class="link_txt">#}
+{#                        팔로우#}
+{#                    </a>#}
+{#                </div>#}
+{#                <div class="feed_name" style="justify-content: space-between">#}
+{#                    <div class="profile_box">#}
+{#                        <img class="profile_img"#}
+{#                             src="http://www.adelieon.com/wordpress/wp-content/uploads/2020/03/2018_samsung_multi-1000x1000.png">#}
+{#                    </div>#}
+{#                    <div class="name_content">#}
+{#                        <span class="feed_name_txt"> Multi_Campus </span>#}
+{#                        <span class="name_content_txt"> SAMSUNG 외 4명이 팔로우</span>#}
+{#                    </div>#}
+{#                    <a class="link_txt">#}
+{#                        팔로우#}
+{#                    </a>#}
+{#                </div>#}
+{#                <div class="feed_name" style="justify-content: space-between">#}
+{#                    <div class="profile_box">#}
+{#                        <img class="profile_img"#}
+{#                             src="https://xen-api.linkareer.com/attachments/24036">#}
+{#                    </div>#}
+{#                    <div class="name_content">#}
+{#                        <span class="feed_name_txt"> SSAFY </span>#}
+{#                        <span class="name_content_txt"> Multi_Campus 외 38명이 팔로우 </span>#}
+{#                    </div>#}
+{#                    <a class="link_txt">#}
+{#                        팔로우#}
+{#                    </a>#}
+{#                </div>#}
+{#                <div class="feed_name" style="justify-content: space-between">#}
+{#                    <div class="profile_box">#}
+{#                        <img class="profile_img"#}
+{#                             src="https://img1.daumcdn.net/thumb/C176x176/?fname=https://blog.kakaocdn.net/dn/vtlxw/btrw7SoWb7K/nRUgvKnYxdo3DNeIlB2PZK/img.png">#}
+{#                    </div>#}
+{#                    <div class="name_content">#}
+{#                        <span class="feed_name_txt"> SWEA </span>#}
+{#                        <span class="name_content_txt"> SSAFY 외 7명이 팔로우 </span>#}
+{#                    </div>#}
+{#                    <a class="link_txt">#}
+{#                        팔로우#}
+{#                    </a>#}
+{#                </div>#}
+{#            </div>#}
 
         </div>
     </div>
